@@ -34,8 +34,8 @@ English: Elementary
 | Date | Education |
 | ----- | ----- |
 | October 2020 - December 2020 | Educational center for programming and high technologies for training in the course "Functional software testing" – Specialist QA  |
-| 2011-2014 | Belarusian State Economic University, Minsk – Specialist |
-| 2005-2006 | World economy and foreign economic policy. Belarusian State Pedagogical University named after Maxim Tank, Minsk – Master of Science in Education |
+| 2011-2014 | Belarusian State Economic University, Minsk – Specialist World economy and foreign economic policy. |
+| 2005-2006 | Belarusian State Pedagogical University named after Maxim Tank, Minsk – Master of Science in Education |
 | 2000-2005 | Teacher of mathematics and computer science. Belarusian State Pedagogical University named after Maxim Tank, Minsk – Specialist , Teacher of mathematics and computer science |
 
 ### PROJECTS

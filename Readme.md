@@ -39,11 +39,11 @@ English: Elementary
 | 2000-2005 | Teacher of mathematics and computer science. Belarusian State Pedagogical University named after Maxim Tank, Minsk – Specialist , Teacher of mathematics and computer science |
 
 ### PROJECTS
-##### Softest Studio - Junior QA Specialist 
+#### Softest Studio - Junior QA Specialist 
 **Responsibilities:**
 - testing the product
 - report bugs into the JIRA
-- communicate with the team
+- communicate with the teamg
 - report of testing TRR
 - code BAT script
 - load testing behavior by JMeter

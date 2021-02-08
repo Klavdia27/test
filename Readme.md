@@ -4,7 +4,7 @@
 Junior QA 
 
 
-+375 (29) 112 83 85
-kklavdia27@gmail.com
-skype: Klavdia
++375 (29) 112 83 85  
+kklavdia27@gmail.com  
+skype: Klavdia  
 linkedin: https://www.linkedin.com/in/klavdia-petukhova-757031202/  

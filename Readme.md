@@ -43,7 +43,7 @@ English: Elementary
 **Responsibilities:**
 - testing the product
 - report bugs into the JIRA
-- communicate with the teamg
+- communicate with the team
 - report of testing TRR
 - code BAT script
 - load testing behavior by JMeter

@@ -1,4 +1,0 @@
-select  Categories.CategoryName, Products.ProductName  from  Categories
- join Products on Categories.CategoryID = Products.CategoryID
- join Orders on Customers.CustomerID =  Orders.CustomerID
-WHERE  Orders.CustomerID=(select Customers.CustomerID from Customers where   Customers.CustomerName="Black")

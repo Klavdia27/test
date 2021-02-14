@@ -1,6 +1,4 @@
-
-echo off                   
+#!/bin/bash
 echo Hello world variable!   
-a=375
-hello=$a
-echo $hello
+a='Hello world variable!'
+echo $a

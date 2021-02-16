@@ -1,0 +1,9 @@
+#!/bin/bash
+echo Введите число N
+read N
+count=0
+ while [ $count -lt $N ]
+do
+count=$[ $count + 2 ]
+printf $count" "
+done

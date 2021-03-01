@@ -1,9 +1,28 @@
 #!/bin/bash
-echo Введите число N
+echo Enter number N
 read N
+xx=1
 count=0
- while [ $count -lt $N ]
-do
-count=$[ $count + 2 ]
-printf $count" "
+
+function printEvent {
+    while [ $count -lt $N ] do
+        count=$[ $count + 2 ]
+            if [ $count -le $N ];
+                then
+                    printf $count" "
+            fi
+    done
+}
+
+while [ $xx -eq 1 ] do
+    if [ -n "$N" ] && [ "$N" -eq "$N" ] 2>/dev/null; 
+        then
+            printEvent
+            xx=0
+        else
+            echo You inputed not number. Please, repeat!
+            read N
+    fi
 done
+
+

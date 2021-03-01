@@ -4,9 +4,13 @@
 echo Введите значение переменной a 
 # запись ввода из командной строки в переменную а
 read a
-var=1
-for ((var=1; var<=a; var++))
-do
-      printf $var" "
-done
 
+function print {
+      var=1
+      for ((var=1; var<=a; var++))
+            do
+                  printf $var" "
+      done
+}
+
+print 

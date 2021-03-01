@@ -1,0 +1,7 @@
+if cd /path/to/repo ; git rev-list $1.. >/dev/null
+    then
+        echo "gogo"
+    else
+        echo "WRONG"
+        exit
+fi

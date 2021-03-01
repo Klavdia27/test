@@ -1,0 +1,29 @@
+#!/bin/bash
+echo Enter name file
+files=$(ls)
+echo $files
+for f in $files
+do 
+  echo $f
+done
+read FILE
+
+if [[ -f $FILE ]]
+    then
+    echo "$FILE exists on your filesystem."
+    else 
+    echo "$FILE not exists on your filesystem."
+fi
+
+
+echo Enter name directory
+read DIRECTORY
+
+if [[ -d $DIRECTORY ]]
+    then
+    echo "$DIRECTORY exists on your filesystem."
+    else 
+    echo "$DIRECTORY not exists on your filesystem."
+fi
+
+find folder1 -type f -name '*.txt'

@@ -1,0 +1,39 @@
+#!/bin/bash
+read ext
+#files=$(find)
+#echo $files
+echo  | tee /c/work/test/task5/index.scv
+echo  | tee /c/work/test/task5/index.html
+files=$(find "$PWD" -type f -regex "^.*$ext")
+#echo $files
+echo "<html>
+  <head>
+    <title>Bash list</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Result</h1>
+    <ul>" | tee -a /c/work/test/task5/index.html
+for f in $files
+do 
+  #xfext=${xbase##*.}
+  filname=$(basename -- "$f")
+  extension="${filname##*.}"
+  filename="${filname%.*}"
+  
+  echo "      <li>
+        <p>human.mp3<p>
+        <a target=\"_black\" href=\"$f\">$f</a>
+      </li>" | tee -a /c/work/test/task5/index.html
+  echo "$filename;$extension" | tee -a /c/work/test/task5/index.scv
+  
+ # echo ${xfext}
+
+done
+echo "</ul>
+  </body>
+</html>" |  tee -a /c/work/test/task5/index.html 
+ 
+
+
+#echo ${files[2]}

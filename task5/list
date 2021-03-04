@@ -1,8 +1,8 @@
 #!/bin/bash
 read ext
 
-echo  | tee /c/work/test/task5/index.scv
-echo  | tee /c/work/test/task5/index.html
+echo  | tee index.scv
+echo  | tee index.html
 
 files=$(find "$PWD" -type f -regex "^.*$ext")
 
@@ -13,22 +13,21 @@ echo "<html>
   </head>
   <body>
     <h1>Result</h1>
-    <ul>" | tee -a /c/work/test/task5/index.html
+    <ul>" | tee -a index.html
 for f in $files
   do 
     filname=$(basename -- "$f")
     extension="${filname##*.}"
     filename="${filname%.*}"
     echo "      <li>
-        <p>human.mp3<p>
+        <p>$filname<p>
         <a target=\"_black\" href=\"$f\">$f</a>
-      </li>" | tee -a /c/work/test/task5/index.html
-    echo "$filename;$extension" | tee -a /c/work/test/task5/index.scv
+      </li>" | tee -a index.html
+    echo "$filename;$extension" | tee -a index.scv
 done
 echo "</ul>
   </body>
-</html>" |  tee -a /c/work/test/task5/index.html 
+</html>" |  tee -a index.html 
  
 
 
-#echo ${files[2]}
